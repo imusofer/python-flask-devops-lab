@@ -34,9 +34,10 @@ Application running locally in the browser:
 
 ## Local Run
 
-cd ~/python-flask-devops-lab
+```bash cd ~/python-flask-devops-lab
 source .venv/bin/activate
 python app/app.py
+```
 
 The application should then be reachable at:
 
