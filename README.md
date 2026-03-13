@@ -15,7 +15,7 @@ Build a simple Python web app, run it locally in an isolated virtual environment
 
 ## Project Structure
 
-```
+```text
 python-flask-devops-lab/
 ├── app/
 │   ├── app.py
@@ -34,7 +34,8 @@ Application running locally in the browser:
 
 ## Local Run
 
-```bash cd ~/python-flask-devops-lab
+```bash
+cd ~/python-flask-devops-lab
 source .venv/bin/activate
 python app/app.py
 ```
@@ -48,37 +49,45 @@ The application should then be reachable at:
 
 The app supports the following runtime environment variables:
 
-APP_ENV - application environment<br>
-APP_VERSION - application version
+- `APP_ENV` - application environment
+- `APP_VERSION` - application version
 
 Example:
+```bash
 APP_ENV=local APP_VERSION=1.0.0 python app/app.py
+```
 
 ## Docker Build
 
-cd ~/python-flask-devops-lab<br>
+```bash
+cd ~/python-flask-devops-lab
 docker build -t python-flask-devops-lab .
+```
 
 ## Docker Run
 
+```bash
 docker run -p 5000:5000 python-flask-devops-lab
+```
 
 The containerized application should then be reachable at:
-http://127.0.0.1:5000
+
+- `http://127.0.0.1:5000`
+
 
 ## What I Learned
 
-1. How to isolate Python dependencies with venv
+1. How to isolate Python dependencies with `venv`
 2. How to build a small Flask web app with multiple endpoints
-3. How to capture dependencies in requirements.txt
+3. How to capture dependencies in `requirements.txt`
 4. How to package an app and its dependencies into a Docker image
 5. The difference between a Docker image and a running container
 6. How local app execution differs from containerized execution
 
 ## Troubleshooting Highlights
 
-1. Fixed Python interpreter mismatch between system Python and .venv
-2. Resolved No module named flask
-3. Corrected missing UTC import
+1. Fixed Python interpreter mismatch between system Python and `.venv`
+2. Resolved `No module named flask`
+3. Corrected missing `UTC` import
 4. Removed duplicate Flask route definition
 5. Clarified the difference between local port binding and Docker port publishing
