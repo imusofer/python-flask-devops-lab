@@ -26,6 +26,12 @@ python-flask-devops-lab/
 └── README.md
 ```
 
+## Screenshot
+
+Application running locally in the browser:
+
+![Python Flask DevOps Lab Home Page](docs/images/python-flask-devops-lab-home.png)
+
 ## Local Run
 
 cd ~/python-flask-devops-lab
