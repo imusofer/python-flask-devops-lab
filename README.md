@@ -40,8 +40,8 @@ python app/app.py
 
 The application should then be reachable at:
 
-http://127.0.0.1:5000
-http://localhost:5000
+- `http://127.0.0.1:5000`
+- `http://localhost:5000`
 
 ## Environment Variables
 
