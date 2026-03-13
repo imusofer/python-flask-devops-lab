@@ -8,10 +8,10 @@ Build a simple Python web app, run it locally in an isolated virtual environment
 
 ## Features
 
-- `/` - home page
-- `/health` - health status endpoint
-- `/config` - runtime configuration from environment variables
-- `/time` - current UTC and Sofia time
+- `GET /` - home page
+- `GET /health` - health status endpoint
+- `GET /config` - runtime configuration from environment variables
+- `GET /time` - current UTC and Sofia time
 
 ## Project Structure
 
@@ -91,3 +91,8 @@ The containerized application should then be reachable at:
 3. Corrected missing `UTC` import
 4. Removed duplicate Flask route definition
 5. Clarified the difference between local port binding and Docker port publishing
+
+# GitHub Repository
+
+- Project Code: https://github.com/imusofer/python-flask-devops-lab
+- Knowledge Base / Notes: https://github.com/imusofer/devops-vault
